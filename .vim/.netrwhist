@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/yinh/GitHub/tmp'
+let g:netrw_dirhist_2='/Users/yinh/GitHub/tmp/services_dev_env'
+let g:netrw_dirhist_3='/Users/yinh/GitHub/tmp/services_dev_env/envs'
+let g:netrw_dirhist_4='/Users/yinh/GitHub/tmp/services_dev_env'
+let g:netrw_dirhist_5='/Users/yinh/GitHub/tmp'
+let g:netrw_dirhist_6='/Users/yinh/GitHub'
+let g:netrw_dirhist_7='/Users/yinh/GitHub/alm_boxbuilder/.git'
+let g:netrw_dirhist_8='/Users/yinh/tmux'
+let g:netrw_dirhist_9='/Users/yinh/GitHub/services_dev_env/envs/mssql-dev/manifests'
