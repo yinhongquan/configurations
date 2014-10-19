@@ -1,3 +1,6 @@
+"Please read http://stevelosh.com/blog/2010/09/coming-home-to-vim/ for more
+"detail
+
 "don't compatible with previous versions
 set nocompatible
 "auto indention, follow same rule as previous line
@@ -31,6 +34,50 @@ set hlsearch
 "case sensitive when searching
 set noic
 
+set encoding=utf-8
+set scrolloff=3
+set autoindent
+set showmode
+set showcmd
+set hidden
+set wildmenu
+set wildmode=list:longest
+set visualbell
+set cursorline
+set ttyfast
+set ruler
+set backspace=indent,eol,start
+set laststatus=2
+set relativenumber
+set undofile
+
+"add a color bar at column 85, so that you know it is a long line
+set wrap
+set textwidth=79
+set formatoptions=qrn1
+set colorcolumn=85
+
+"disable arrow keys when in normal mode
+"also disable arrow keys when in insert mode, you need to switch to normal mode
+"if want to move between lines
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+nnoremap j gj
+nnoremap k gk
+
+"save file when losing focus. That happens when switching to another tab
+au FocusLost * :wa
+
+"map jj to ESC
+inoremap jj <ESC>
+"map kk to <ESC>:
+inoremap kk <ESC>:
 
 "enable syntax and highlight syntax
 syntax enable
