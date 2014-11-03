@@ -55,8 +55,6 @@ set undofile
 set wrap
 set textwidth=79
 set formatoptions=qrn1
-set colorcolumn=85
-highlight ColorColumn ctermbg=235 guibg=#2c2d27
 
 "disable arrow keys when in normal mode
 "also disable arrow keys when in insert mode, you need to switch to normal mode
@@ -72,11 +70,12 @@ inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 
+"map <F7> to tab-previous, <F8> to tab-next
+map <F7> :tabp<CR>
+map <F8> :tabn<CR>
+
 "save file when losing focus. That happens when switching to another tab
 au FocusLost * :wa
-"save file with no backups
-set nobackup
-set nowritebackup
 
 "map jj to ESC
 inoremap jj <ESC>
@@ -99,8 +98,8 @@ set list
 set listchars=tab:>-,trail:-
 
 "nerd tree view
-map <F7> :NERDTreeToggle<CR>
-imap <F7> <ESC>:NERDTreeToggle<CR>
+map <F6> :NERDTreeToggle<CR>
+imap <F6> <ESC>:NERDTreeToggle<CR>
 
 "powerline
 set guifont=Meslo\ LG\ L\ Regular\ for\ Powerline
