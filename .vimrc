@@ -70,9 +70,10 @@ inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 
-"map <F7> to tab-previous, <F8> to tab-next
+"map <F7> to tab-previous, <F8> to tab-next, <F9> to open new file in tab
 map <F7> :tabp<CR>
 map <F8> :tabn<CR>
+map <F9> :tabe 
 
 "save file when losing focus. That happens when switching to another tab
 au FocusLost * :wa
