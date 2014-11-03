@@ -56,6 +56,7 @@ set wrap
 set textwidth=79
 set formatoptions=qrn1
 set colorcolumn=85
+highlight ColorColumn ctermbg=235 guibg=#2c2d27
 
 "disable arrow keys when in normal mode
 "also disable arrow keys when in insert mode, you need to switch to normal mode
@@ -78,6 +79,8 @@ au FocusLost * :wa
 inoremap jj <ESC>
 "map kk to <ESC>:
 inoremap kk <ESC>:
+"map hh to <ESC>/
+inoremap hh <ESC>/
 
 "enable syntax and highlight syntax
 syntax enable
