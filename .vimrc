@@ -74,6 +74,9 @@ nnoremap k gk
 
 "save file when losing focus. That happens when switching to another tab
 au FocusLost * :wa
+"save file with no backups
+set nobackup
+set nowritebackup
 
 "map jj to ESC
 inoremap jj <ESC>
