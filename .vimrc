@@ -78,7 +78,9 @@ map <F9> :tabe
 "save file when losing focus. That happens when switching to another tab
 au FocusLost * :wa
 
-"map jj to ESC
+"map <TAB> to <ESC>
+inoremap <TAB> <ESC>
+"map jj to <ESCi>
 inoremap jj <ESC>
 "map kk to <ESC>:
 inoremap kk <ESC>:
